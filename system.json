@@ -3,12 +3,12 @@
   "title": "Fantastic Medieval Campaigns",
   "description": "Unofficial system for FMC by Marcia B.",
   "author": "Justin Hamilton",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "minimumCoreVersion": "0.8.9",
   "url": "https://github.com/jamiltron/fantastic-medieval-campaigns-fvtt",
   "manifest": "https://raw.githubusercontent.com/jamiltron/fantastic-medieval-campaigns-fvtt/main/system.json",
   "download": "https://github.com/jamiltron/fantastic-medieval-campaigns-fvtt/archive/main.zip",
-  "esmodules": ["scripts/system.js"],
+  "esmodules": ["systems/fantastic-medieval-campaigns/scripts/system.js"],
   "template": {
     "Actor": "template.json",
     "Item": "template.json"
@@ -17,8 +17,8 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "systems/fantastic-medieval-campaigns/lang/en.json"
     }
   ],
-  "styles": ["styles/style.css"]
+  "styles": ["systems/fantastic-medieval-campaigns/styles/style.css"]
 }
