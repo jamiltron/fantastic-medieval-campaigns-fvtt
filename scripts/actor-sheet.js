@@ -5,14 +5,13 @@ export class FmcActorSheet extends ActorSheet {
       classes: ["fantastic-medieval-campaigns", "sheet", "actor"],
       width: 600,
       height: 600,
-      tabs: [
-        {
+      tabs: {
+        ".tabs": {
           navSelector: ".tabs",
           contentSelector: ".sheet-body",
-          initial: "attributes",
-          layout: "vertical"
+          initial: "attributes"
         }
-      ],
+      },
       scrollY: [".attributes", ".inventory", ".combat", ".spells", ".misc"]
     });
   }
