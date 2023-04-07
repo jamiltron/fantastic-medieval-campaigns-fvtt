@@ -1,4 +1,4 @@
-class FmcActorSheet extends ActorSheet {
+export class FmcActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       template: "templates/actor-sheet.html",
