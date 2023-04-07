@@ -1,36 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="/systems/fantastic-medieval-campaigns/styles/style.css" />
-</head>
-<body>
-  <form class="actor-sheet">
-    <h1>{{actor.name}}</h1>
+<div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/systems/fantastic-medieval-campaigns/styles/style.css" />
+  </head>
+  <body>
+    <form class="actor-sheet">
+      <h1>{{actor.name}}</h1>
 
-    <!-- Add the tab navigation -->
-    <nav class="tabs">
-      <a class="item" data-tab="attributes">Attributes</a>
-      <a class="item" data-tab="inventory">Inventory</a>
-    </nav>
+      <!-- Add the tab navigation -->
+      <nav class="tabs">
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="inventory">Inventory</a>
+      </nav>
 
-    <!-- Add the corresponding tab content sections -->
-    <section class="sheet-body">
-      <div class="tab" data-tab="attributes">
-        <div class="attributes">
-          {{#each actor.data.attributes as |attribute key|}}
-            <div class="attribute">
-              <label>{{key}}</label>
-              <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
-            </div>
-          {{/each}}
+      <!-- Add the corresponding tab content sections -->
+      <section class="sheet-body">
+        <div class="tab" data-tab="attributes">
+          <div class="attributes">
+            {{#each actor.data.attributes as |attribute key|}}
+              <div class="attribute">
+                <label>{{key}}</label>
+                <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
+              </div>
+            {{/each}}
+          </div>
         </div>
-      </div>
 
-      <div class="tab" data-tab="inventory">
-        <!-- Add your inventory content here -->
-      </div>
-    </section>
-  </form>
-</body>
-</html>
+        <div class="tab" data-tab="inventory">
+          <!-- Add your inventory content here -->
+        </div>
+      </section>
+    </form>
+  </body>
+</div>
