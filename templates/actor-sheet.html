@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <form class="actor-sheet">
+    <h1>{{actor.name}}</h1>
+    <div class="attributes">
+      {{#each actor.data.attributes as |attribute key|}}
+        <div class="attribute">
+          <label>{{key}}</label>
+          <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
+        </div>
+      {{/each}}
+    </div>
+  </form>
+</body>
+</html>

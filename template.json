@@ -1,0 +1,32 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": {
+      "base": {
+        "data": {
+          "attributes": {
+            "strength": 10,
+            "dexterity": 10,
+            "constitution": 10,
+            "intelligence": 10,
+            "wisdom": 10,
+            "charisma": 10
+          },
+          "hit-points": {
+            "current": 6,
+            "maximum": 6
+          },
+          "level": 1,
+          "experience-points": 0,
+          "inventory": {},
+          "combat": {},
+          "spells": {},
+          "misc": {}
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": []
+  }
+}

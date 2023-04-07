@@ -1,0 +1,24 @@
+{
+  "name": "fantastic-medieval-campaigns",
+  "title": "Fantastic Medieval Campaigns",
+  "description": "FMC by Marcia B.",
+  "author": "Justin Hamilton",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.8.9",
+  "url": "https://github.com/jamiltron/fantastic-medieval-campaigns-fvtt",
+  "manifest": "https://raw.githubusercontent.com/jamiltron/fantastic-medieval-campaigns-fvtt/main/system.json",
+  "download": "https://github.com/jamiltron/fantastic-medieval-campaigns-fvtt/archive/main.zip",
+  "esmodules": ["scripts/system.js"],
+  "template": {
+    "Actor": "template.json",
+    "Item": "template.json"
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "styles": ["styles/style.css"]
+}
