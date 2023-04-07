@@ -7,14 +7,30 @@
 <body>
   <form class="actor-sheet">
     <h1>{{actor.name}}</h1>
-    <div class="attributes">
-      {{#each actor.data.attributes as |attribute key|}}
-        <div class="attribute">
-          <label>{{key}}</label>
-          <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
+
+    <!-- Add the tab navigation -->
+    <nav class="tabs">
+      <a class="item" data-tab="attributes">Attributes</a>
+      <a class="item" data-tab="inventory">Inventory</a>
+    </nav>
+
+    <!-- Add the corresponding tab content sections -->
+    <section class="sheet-body">
+      <div class="tab" data-tab="attributes">
+        <div class="attributes">
+          {{#each actor.data.attributes as |attribute key|}}
+            <div class="attribute">
+              <label>{{key}}</label>
+              <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
+            </div>
+          {{/each}}
         </div>
-      {{/each}}
-    </div>
+      </div>
+
+      <div class="tab" data-tab="inventory">
+        <!-- Add your inventory content here -->
+      </div>
+    </section>
   </form>
 </body>
 </html>
