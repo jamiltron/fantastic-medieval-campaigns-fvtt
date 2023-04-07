@@ -2,4 +2,4 @@
 
 **CURRENTLY IN PROGRESS**
 
-Foundry Game System for Marcia B.'s [Fantastic Medieval Campaigns](https://traversefantasy.itch.io/fmc).
+Unofficial Foundry game system for Marcia B.'s [Fantastic Medieval Campaigns](https://traversefantasy.itch.io/fmc).
