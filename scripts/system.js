@@ -1,10 +1,11 @@
+import { FmcActor } from "./actor.js";
 import { FmcActorSheet } from "./actor-sheet.js";
 
 Hooks.once("init", () => {
   console.log("Fantastic Medieval Campaigns | Initializing FMC");
 
   // Define custom Entity classes
-  CONFIG.Actor.entityClass = Actor;
+  CONFIG.Actor.entityClass = FmcActor;
   CONFIG.Item.entityClass = Item;
 
   // Register sheet application classes
