@@ -1,32 +1,29 @@
-<form class="actor-sheet">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/systems/fantastic-medieval-campaigns/styles/style.css" />
-  </head>
-  <h1>{{actor.name}}</h1>
-  <div class="attributes">
-    {{#each actor.data.attributes as |attribute key|}}
-      <div class="attribute">
-        <label>{{key}}</label>
-        <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
-      </div>
-    {{/each}}
-  </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="#" class="tab" data-tab="attributes">Attributes</a></li>
-    </ul>
-  </div>
-  <div class="sheet-body">
-    <div class="tab-content" data-tab="attributes">
-      <div class="attributes">
-        {{#each actor.data.attributes as |attribute key|}}
-          <div class="attribute">
-            <label>{{key}}</label>
-            <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
-          </div>
-        {{/each}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/systems/fantastic-medieval-campaigns/styles/style.css" />
+</head>
+<body>
+  <form class="actor-sheet">
+    <h1>{{actor.name}}</h1>
+    <div class="tabs">
+      <ul>
+        <li><span class="tab" data-tab="attributes">Attributes</span></li>
+      </ul>
+    </div>
+    <div class="sheet-body">
+      <div class="tab-content" data-tab="attributes">
+        <div class="attributes">
+          {{#each actor.data.attributes as |attribute key|}}
+            <div class="attribute">
+              <label>{{key}}</label>
+              <input type="number" name="data.attributes.{{key}}" value="{{attribute}}" data-dtype="Number" />
+            </div>
+          {{/each}}
+        </div>
       </div>
     </div>
-  </div>
-</form>
+  </form>
+</body>
+</html>

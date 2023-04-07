@@ -23,7 +23,26 @@ export class FmcActorSheet extends ActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
 
-    // Add any custom event listeners, such as click, change, or submit events
+    // Handle tab switching
+    html.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', this._onTabClick.bind(this));
+    });
+  }
+
+  _onTabClick(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const tab = target.dataset.tab;
+
+    this.element.querySelectorAll(".tab").forEach(tab => {
+      tab.classList.remove("active");
+    });
+    target.classList.add("active");
+
+    this.element.querySelectorAll(".tab-content").forEach(content => {
+      content.style.display = 'none';
+    });
+    this.element.querySelector(`.tab-content[data-tab="${tab}"]`).style.display = 'block';
   }
 
   _updateObject(event, formData) {
