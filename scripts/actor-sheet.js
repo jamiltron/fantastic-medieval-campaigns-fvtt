@@ -1,7 +1,7 @@
 export class FmcActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      template: "templates/actor-sheet.html",
+      template: "systems/fantastic-medieval-campaigns/actor-sheet.html",
       classes: ["fantastic-medieval-campaigns", "sheet", "actor"],
       width: 600,
       height: 600,

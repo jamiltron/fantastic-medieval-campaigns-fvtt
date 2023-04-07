@@ -1,7 +1,7 @@
 import { FmcActorSheet } from "./actor-sheet.js";
 
 Hooks.once("init", () => {
-  console.log("My Game System | Initializing My Game System");
+  console.log("Fantastic Medieval Campaigns | Initializing FMC");
 
   // Define custom Entity classes
   CONFIG.Actor.entityClass = Actor;
